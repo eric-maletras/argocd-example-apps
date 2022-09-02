@@ -3,8 +3,6 @@ apiVersion: apps/v1
 metadata:
   name: orders-new
   namespace: sock-shop
-  annotations:
-    deployment.kubernetes.io/revision: '1'
 spec:
   replicas: 1
   selector:
@@ -35,10 +33,10 @@ spec:
                 -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom
           resources:
             limits:
-              cpu: 100m
+              cpu: 200m
               memory: 500Mi
             requests:
-              cpu: 100m
+              cpu: 200m
               memory: 500Mi
           volumeMounts:
             - name: tmp-volume
