@@ -26,4 +26,3 @@ resources:
 - base/user-db-svc.yaml
 - base/user-dep.yaml
 - base/user-svc.yaml
-- base/book-flux.yaml
